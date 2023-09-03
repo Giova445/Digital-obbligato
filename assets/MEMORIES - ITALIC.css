@@ -1,0 +1,9 @@
+/* Webfont: TANMEMORIES-Italic */@font-face {
+    font-family: 'TAN-MEMORIES';
+    src: url('MEMORIES - ITALIC.woff2') format('woff2'), /* Modern Browsers */
+         url('MEMORIES - ITALIC.otf') format('opentype'); /* Safari, Android, iOS */
+             font-style: italic;
+    font-weight: normal;
+    text-rendering: optimizeLegibility;
+}
+

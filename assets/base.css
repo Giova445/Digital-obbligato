@@ -5,6 +5,23 @@
   --alpha-badge-border: 0.1;
 }
 
+@font-face {
+  font-family: 'Outfit';
+  src: url('{{ Outfit-Medium.ttf | asset_url }}') format('ttf');
+}
+
+@font-face {
+  font-family: 'Outfit-bold';
+  src: url('{{ Outfit-Bold.ttf | asset_url }}') format('ttf');
+}
+
+@font-face {
+  font-family: 'tan-memories';
+  src: url('{{ Outfit-Bold.ttf | asset_url }}') format('ttf');
+  src: url('{{MEMORIES-REG.woff2 |asset_url }}') format('woff2'), /* Modern Browsers */
+  url('{{MEMORIES-REG.otf |asset_url }}') format('opentype');
+}
+
 .product-card-wrapper .card,
 .contains-card--product {
   --border-radius: var(--product-card-corner-radius);
