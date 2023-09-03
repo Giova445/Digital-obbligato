@@ -1,0 +1,25 @@
+<section class="logos-section">
+  <div class="logos-container">
+    {% for logo in section.settings.logos %}
+      <img src="{{ logo | img_url: '200x200' }}" alt="{{ logo.alt }}">
+    {% endfor %}
+  </div>
+</section>
+{%  schema  %} 
+{
+  "name": "Logo Settings",
+  "settings": [
+    {
+      "type": "text",
+      "label": "Logo Alt Text",
+      "id": "logo_alt_text",
+      "default": "Logo Alt Text"
+    },
+    {
+      "type": "image_picker",
+      "label": "Logo Image",
+      "id": "logo_image"
+    }
+  ]
+}
+{% endschema %}

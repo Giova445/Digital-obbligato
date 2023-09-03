@@ -35,8 +35,9 @@
   margin-right: auto;
 }
 
-.multicolumn .button {
+.multicolumn .button.button--secondary {
   margin-top: 1.5rem;
+  max-width: 80%;
 }
 
 @media screen and (min-width: 750px) {
@@ -49,8 +50,11 @@
   margin-top: 0;
   margin-bottom: 0;
   padding: 0;
+  gap: 20px;
 }
-
+.grid--3-col-desktop .multicolumn-list__item {
+  max-width: 300px;
+}
 .multicolumn-list__item:only-child {
   max-width: 72rem;
 }
@@ -65,8 +69,15 @@
 }
 
 .multicolumn.background-primary .multicolumn-card {
-  background: rgb(var(--color-background))
-    linear-gradient(rgba(var(--color-foreground), 0.04), rgba(var(--color-foreground), 0.04));
+  background: none;
+  gap: 20px;
+}
+.multicolumn.background-primary .multicolumn-card * {
+  margin-left: 0;
+  margin-right: 0;
+  padding-left: 0;
+  padding-right: 0;
+
 }
 
 .multicolumn-list h3 {
@@ -84,13 +95,20 @@
   margin-right: 2.5rem;
 }
 
-.multicolumn-card__info > :nth-child(2) {
+.multicolumn-card__info > :nth-child(3) {
   margin-top: 1rem;
 }
 
 .multicolumn-list__item.center .media--adapt,
 .multicolumn-list__item .media--adapt .multicolumn-card__image {
   width: auto;
+}
+
+.multicolumn--date {
+  font-family: 'Outfit-bold';
+  font-weight: 500;
+  font-size: 12px;
+  padding-bottom: 15px;
 }
 
 .multicolumn-list__item.center .media--adapt img {

@@ -123,12 +123,15 @@
                 {%- if block.settings.title != blank -%}
                   <h3 class="inline-richtext">{{ block.settings.title }}</h3>
                 {%- endif -%}
+                {%- if block.settings.date != blank -%}
+                  <p class="multicolumn--date">{{ block.settings.date }}</p>
+                {%- endif -%}
                 {%- if block.settings.text != blank -%}
                   <div class="rte">{{ block.settings.text }}</div>
                 {%- endif -%}
                 {%- if block.settings.link_label != blank -%}
                   <a
-                    class="link animate-arrow"
+                    class="button button--secondary"
                     {% if block.settings.link == blank %}
                       role="link" aria-disabled="true"
                     {% else %}
@@ -136,7 +139,7 @@
                     {% endif %}
                   >
                     {{- block.settings.link_label | escape -}}
-                    <span class="icon-wrap">&nbsp;{% render 'icon-arrow' %}</span></a
+                    </a
                   >
                 {%- endif -%}
               </div>
@@ -272,7 +275,7 @@
       "type": "range",
       "id": "columns_desktop",
       "min": 1,
-      "max": 6,
+      "max": 8,
       "step": 1,
       "default": 3,
       "label": "t:sections.multicolumn.settings.columns_desktop.label"
@@ -360,7 +363,7 @@
       "type": "range",
       "id": "padding_top",
       "min": 0,
-      "max": 100,
+      "max": 240,
       "step": 4,
       "unit": "px",
       "label": "t:sections.all.padding.padding_top",
@@ -370,7 +373,7 @@
       "type": "range",
       "id": "padding_bottom",
       "min": 0,
-      "max": 100,
+      "max": 240,
       "step": 4,
       "unit": "px",
       "label": "t:sections.all.padding.padding_bottom",
@@ -392,6 +395,12 @@
           "id": "title",
           "default": "Column",
           "label": "t:sections.multicolumn.blocks.column.settings.title.label"
+        },
+        {
+          "type": "inline_richtext",
+          "id": "date",
+          "default": "date",
+          "label": "insert date"
         },
         {
           "type": "richtext",

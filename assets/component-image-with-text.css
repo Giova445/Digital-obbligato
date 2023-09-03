@@ -315,7 +315,7 @@
 /* Needed for gradient continuity with or without animation so that transparent PNG images come up as we would expect */
 .image-with-text:not(.image-with-text--overlap) .color-background-1,
 .image-with-text.image-with-text--overlap .image-with-text__media.color-background-1 {
-  background: transparent;
+  background: #D0DDF3;
 }
 
 /* Needed for gradient continuity with or without animation, the transform scopes the gradient to its container which happens already when animation are turned on */
@@ -348,6 +348,7 @@
 .image-with-text__text--caption + .image-with-text__heading,
 .image-with-text__text--caption:first-child {
   margin-top: 0;
+  font-family: 'tan-memories', 'Helvetica'; 
 }
 
 .image-with-text__content :last-child:is(.image-with-text__heading),
