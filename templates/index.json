@@ -74,10 +74,122 @@
         "padding_top": 44,
         "padding_bottom": 36
       }
+    },
+    "842f60cc-ecc1-4a2e-8464-df041848034e": {
+      "type": "logo-list",
+      "blocks": {
+        "template--20918616260919__842f60cc-ecc1-4a2e-8464-df041848034e-logo_image-1": {
+          "type": "logo_image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/forbes_1_1.png",
+            "link": ""
+          }
+        },
+        "template--20918616260919__842f60cc-ecc1-4a2e-8464-df041848034e-logo_image-2": {
+          "type": "logo_image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/2560px-Business_Insider_Logo_1.png",
+            "link": ""
+          }
+        },
+        "template--20918616260919__842f60cc-ecc1-4a2e-8464-df041848034e-logo_image-3": {
+          "type": "logo_image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Entrepreneur_logo_1.png",
+            "link": ""
+          }
+        },
+        "template--20918616260919__842f60cc-ecc1-4a2e-8464-df041848034e-logo_image-4": {
+          "type": "logo_image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/download_1.png",
+            "link": ""
+          }
+        },
+        "d4c9306e-7558-4ac2-8bc6-207fe48b911d": {
+          "type": "logo_image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/download-1_1.png",
+            "link": ""
+          }
+        },
+        "abf49142-9439-42da-b3d9-218fbf73835a": {
+          "type": "logo_image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/CNN-logo-black_1.png",
+            "link": ""
+          }
+        },
+        "9e72f90b-5e6e-4eb6-ab09-b9a2afc8f49f": {
+          "type": "logo_image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/ny1_1.png",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--20918616260919__842f60cc-ecc1-4a2e-8464-df041848034e-logo_image-1",
+        "template--20918616260919__842f60cc-ecc1-4a2e-8464-df041848034e-logo_image-2",
+        "template--20918616260919__842f60cc-ecc1-4a2e-8464-df041848034e-logo_image-3",
+        "template--20918616260919__842f60cc-ecc1-4a2e-8464-df041848034e-logo_image-4",
+        "d4c9306e-7558-4ac2-8bc6-207fe48b911d",
+        "abf49142-9439-42da-b3d9-218fbf73835a",
+        "9e72f90b-5e6e-4eb6-ab09-b9a2afc8f49f"
+      ],
+      "settings": {
+        "title": "",
+        "logo_width": "175px"
+      }
+    },
+    "117313c5-1ddd-441b-afa8-d15d542c39bc": {
+      "type": "rich-text",
+      "blocks": {
+        "template--20918616260919__117313c5-1ddd-441b-afa8-d15d542c39bc-heading-1": {
+          "type": "heading",
+          "disabled": true,
+          "settings": {
+            "heading": "",
+            "heading_size": "h1"
+          }
+        },
+        "template--20918616260919__117313c5-1ddd-441b-afa8-d15d542c39bc-text-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>The Tough Stuff Podcast explores the tough stuff that business owners at every stage have to face. Whether you’re at the pre-launch phase of your business or deep in the trenches as a multi-million dollar business owner, this is the almost-too-honest love note you need to read to know that, despite all the tough stuff you have to wade through, <strong>you are not alone!<\/strong><\/p>"
+          }
+        },
+        "template--20918616260919__117313c5-1ddd-441b-afa8-d15d542c39bc-button-1": {
+          "type": "button",
+          "settings": {
+            "button_label": "LISTEN NOW",
+            "button_link": "shopify:\/\/collections\/frontpage",
+            "button_style_secondary": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "template--20918616260919__117313c5-1ddd-441b-afa8-d15d542c39bc-heading-1",
+        "template--20918616260919__117313c5-1ddd-441b-afa8-d15d542c39bc-text-1",
+        "template--20918616260919__117313c5-1ddd-441b-afa8-d15d542c39bc-button-1"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
     }
   },
   "order": [
     "image_banner",
-    "featured_collection"
+    "featured_collection",
+    "842f60cc-ecc1-4a2e-8464-df041848034e",
+    "117313c5-1ddd-441b-afa8-d15d542c39bc"
   ]
 }
