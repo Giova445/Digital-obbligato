@@ -261,6 +261,13 @@
         "padding_top": 120,
         "padding_bottom": 160
       }
+    },
+    "f21a9e4d-dae5-44f8-b07b-abb2e94bd2c8": {
+      "type": "section-slider",
+      "settings": {
+        "slide1_text": "Slide 1 Text",
+        "slide2_text": "Slide 2 Text"
+      }
     }
   },
   "order": [
@@ -268,6 +275,7 @@
     "842f60cc-ecc1-4a2e-8464-df041848034e",
     "117313c5-1ddd-441b-afa8-d15d542c39bc",
     "231abb20-82d9-44fe-afe8-f32604c8264f",
-    "912a9fbd-f808-42ce-aa18-5eabe05aed37"
+    "912a9fbd-f808-42ce-aa18-5eabe05aed37",
+    "f21a9e4d-dae5-44f8-b07b-abb2e94bd2c8"
   ]
 }
