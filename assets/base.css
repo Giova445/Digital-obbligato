@@ -3348,15 +3348,62 @@ details-disclosure > details {
 
 
 @media screen and (max-width: 650px) {
-  .header--mobile-left {
+
+  div#menu-drawer {
+    height: 100dvh;
+    top: 0;
+    background-image: url('https://cdn.shopify.com/s/files/1/0823/9402/2199/files/Gradient.jpg?v=1693809766.jpg');
+  } 
+  .section-header .header {
     display: flex;
     flex-direction: row-reverse;
     justify-content: space-between;
+    padding: 10px 2rem 10px 2rem;
   }
+
+  .js .menu-drawer
+
   .header__icons {
     display: none;
   }
-  
+
+  .header--container {
+    width: calc(100% - 34px);
+  }
+
+  .banner:not(.banner--mobile-bottom) .banner__box {
+    top: 90px;
+    padding: 20px 20px 0 20px;
+  }
+
+  .banner_box .banner__buttons {
+    width: 123px;
+    left: 30px;
+
+  }
+
+  .banner__buttons .button {
+    font-size: 11.7px;
+    top: -12px;
+    left: 14px;
+    height: 30px;
+  }
+
+  .logo__section.header--container {
+    width: 100%;
+    padding: 0 18px;
+    justify-content: center;
+    gap: 26px;
+  }
+
+  .logo__section .logo-bar-section {
+    width: fit-content;
+    margin: 0;
+  }
+
+  .logo-bar-section img {
+    max-width: 65px;
+  }
 }
 /* Animations */
 
