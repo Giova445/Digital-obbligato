@@ -278,6 +278,24 @@
         "slide2_text": "Slide 2 Text"
       }
     },
+    "d00a36d9-97f9-4221-9380-9c148130957b": {
+      "type": "go-section",
+      "settings": {
+        "section_title": "SEASON 1",
+        "color_picker": "#ffaf7d",
+        "color_picker-title": "#000000",
+        "rotate": 90
+      }
+    },
+    "8dcb225e-1607-4350-871b-2b776f087283": {
+      "type": "go-section",
+      "settings": {
+        "section_title": "SEASON 1",
+        "color_picker": "#353373",
+        "color_picker-title": "#ffffff",
+        "rotate": 90
+      }
+    },
     "f7b53eda-bd56-410a-ab31-db1d2dec291e": {
       "type": "featured-collection",
       "settings": {
@@ -315,6 +333,8 @@
     "912a9fbd-f808-42ce-aa18-5eabe05aed37",
     "342858ed-c8d5-4dfb-a2e8-fe41ef7516d2",
     "f21a9e4d-dae5-44f8-b07b-abb2e94bd2c8",
+    "d00a36d9-97f9-4221-9380-9c148130957b",
+    "8dcb225e-1607-4350-871b-2b776f087283",
     "f7b53eda-bd56-410a-ab31-db1d2dec291e"
   ]
 }
