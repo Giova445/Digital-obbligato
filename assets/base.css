@@ -3348,7 +3348,9 @@ details-disclosure > details {
 
 
 @media screen and (max-width: 650px) {
-
+  .header__icons {
+    display: none !important;
+  }
   div#menu-drawer {
     height: 100dvh;
     top: 0;
@@ -3363,9 +3365,7 @@ details-disclosure > details {
 
   .js .menu-drawer
 
-  .header__icons {
-    display: none;
-  }
+  
 
   .header--container {
     width: calc(100% - 34px);
@@ -3403,6 +3403,40 @@ details-disclosure > details {
 
   .logo-bar-section img {
     max-width: 65px;
+  }
+  .slides .slide .slide--half {
+    width: 100%;
+    height: fit-content;
+  }
+  details[open]>.search-modal, .search-modal__content {
+    z-index: 20 !important;
+  }
+  .js .menu-drawer__menu li,.js .menu-drawer__menu li  a {
+    color: #fff;
+  }
+  .list-menu__item {
+    color: whit;
+  }
+  .menu-drawer summary.menu-drawer__menu-item {
+    width: 157px;
+    color: #fff;
+  }
+  .js .menu-drawer__menu li .header__icon .icon {
+    color: #fff;
+  }
+  .js .menu-drawer__menu li .header__icon .icon path#Vector {
+    fill: #fff;
+  }
+  .menu-drawer--icons {
+    display: flex;
+  }
+  .js .menu-drawer__menu li:last-child {
+    padding: 0 20px;
+    margin-top: 20px;
+  }
+  .js .menu-drawer__menu li:last-child .button--primary {
+    max-width: 50%;
+    margin-top: 20px;
   }
 }
 /* Animations */

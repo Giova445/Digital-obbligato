@@ -121,6 +121,33 @@
                   {%- endif -%}
                 </li>
               {%- endfor -%}
+              <li>
+                <div class="menu-drawer--icons">
+                {% render 'header-search', input_id: 'Search-In-Modal' %}
+                <a href="{{ routes.account_login_url }}" class="header__icon link focus-inset">
+                  {% render 'icon-person' %}
+                </a>
+                <a href="{{ routes.cart_url }}" class="header__icon header__icon--cart link focus-inset" id="cart-icon-bubble">
+                  {%- liquid
+                    if cart == empty
+                      render 'icon-cart-empty'
+                    else
+                      render 'icon-cart'
+                    endif
+                  -%}
+                <span class="visually-hidden">{{ 'templates.cart.cart' | t }}</span>
+                {%- if cart != empty -%}
+                  <div class="cart-count-bubble">
+                    {%- if cart.item_count < 100 -%}
+                      <span aria-hidden="true">{{ cart.item_count }}</span>
+                    {%- endif -%}
+                    <span class="visually-hidden">{{ 'sections.header.cart_count' | t: count: cart.item_count }}</span>
+                  </div>
+                {%- endif -%}
+              </a>
+              </div>
+              <a class="button button--primary" href="/collections/all">subscribe</a>
+              </li>
             </ul>
           </nav>
           <div class="menu-drawer__utility-links">
