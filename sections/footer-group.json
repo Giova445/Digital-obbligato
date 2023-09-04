@@ -5,10 +5,11 @@
     "footer": {
       "type": "footer",
       "blocks": {
-        "a39b3cda-2d69-457b-8564-05c2489492a2": {
-          "type": "brand_information",
+        "a959f6ab-c218-447a-aa67-cd12311362b4": {
+          "type": "text",
           "settings": {
-            "show_social": true
+            "heading": "",
+            "subtext": ""
           }
         },
         "a7f474e7-e7e9-4f4e-a3e1-886931c5d26e": {
@@ -20,7 +21,7 @@
         }
       },
       "block_order": [
-        "a39b3cda-2d69-457b-8564-05c2489492a2",
+        "a959f6ab-c218-447a-aa67-cd12311362b4",
         "a7f474e7-e7e9-4f4e-a3e1-886931c5d26e"
       ],
       "settings": {
