@@ -3,21 +3,21 @@
     "image_banner": {
       "type": "image-banner",
       "blocks": {
-        "heading": {
-          "type": "heading",
-          "settings": {
-            "heading": "shopify:\/\/shop_images\/Group_1.png"
-          }
-        },
         "button": {
           "type": "buttons",
           "settings": {
             "button_label_1": "Shop all",
             "button_link_1": "shopify:\/\/collections\/all",
-            "button_style_secondary_1": true,
+            "button_style_secondary_1": false,
             "button_label_2": "",
             "button_link_2": "",
             "button_style_secondary_2": false
+          }
+        },
+        "heading": {
+          "type": "heading",
+          "settings": {
+            "heading": "shopify:\/\/shop_images\/Group_1.png"
           }
         },
         "6b4297b5-e58b-4bdf-a3a8-531d5fb923be": {
@@ -29,8 +29,8 @@
         }
       },
       "block_order": [
-        "heading",
         "button",
+        "heading",
         "6b4297b5-e58b-4bdf-a3a8-531d5fb923be"
       ],
       "settings": {
