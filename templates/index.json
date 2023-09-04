@@ -217,22 +217,24 @@
             "link": ""
           }
         },
-        "template--20918616260919__912a9fbd-f808-42ce-aa18-5eabe05aed37-column-2": {
+        "ed1dcdf8-0b6f-40b1-ac36-52d247559023": {
           "type": "column",
           "settings": {
-            "title": "Column",
-            "date": "date",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "image": "shopify:\/\/shop_images\/sporadic-lights-trail-pattern.jpg",
+            "title": "Episode Title",
+            "date": "December 2, 2021 ・ anna Smith",
+            "text": "<p>Another productive way to use this tool to begin a daily writing routine. One way is to generate a random paragraph with the intention to try to rewrite it while still keeping the...<\/p>",
             "link_label": "",
             "link": ""
           }
         },
-        "template--20918616260919__912a9fbd-f808-42ce-aa18-5eabe05aed37-column-3": {
+        "1485438e-72fe-45a3-b740-c661195a5bb6": {
           "type": "column",
           "settings": {
-            "title": "Column",
-            "date": "date",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "image": "shopify:\/\/shop_images\/sporadic-lights-trail-pattern.jpg",
+            "title": "Episode Title",
+            "date": "December 2, 2021 ・ anna Smith",
+            "text": "<p>Another productive way to use this tool to begin a daily writing routine. One way is to generate a random paragraph with the intention to try to rewrite it while still keeping the...<\/p>",
             "link_label": "",
             "link": ""
           }
@@ -240,8 +242,8 @@
       },
       "block_order": [
         "template--20918616260919__912a9fbd-f808-42ce-aa18-5eabe05aed37-column-1",
-        "template--20918616260919__912a9fbd-f808-42ce-aa18-5eabe05aed37-column-2",
-        "template--20918616260919__912a9fbd-f808-42ce-aa18-5eabe05aed37-column-3"
+        "ed1dcdf8-0b6f-40b1-ac36-52d247559023",
+        "1485438e-72fe-45a3-b740-c661195a5bb6"
       ],
       "settings": {
         "title": "Popular Tough Stuff",
@@ -251,7 +253,7 @@
         "columns_desktop": 3,
         "column_alignment": "left",
         "background_style": "primary",
-        "button_label": "Button label",
+        "button_label": "",
         "button_link": "",
         "color_scheme": "",
         "columns_mobile": "1",
