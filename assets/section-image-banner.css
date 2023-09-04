@@ -432,6 +432,10 @@
   width: 100%;
 }
 
+.banner__text.body p {
+  color: #fff;
+}
+
 .banner__box .banner__heading + * {
   margin-top: 1rem;
   font-family: 'Outfit-bold', 'Helvetica';
