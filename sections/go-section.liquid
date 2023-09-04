@@ -18,12 +18,16 @@
         justify-content: center;
         gap: 15px;
     }
+    .go--section__container .section--content h4 {
+        font-weight: 500;
+        text-transform: uppercase;
+    }
     .go--section__container .section--content svg {
         rotate: {{ section.settings.rotate }}deg;
-        fill: {{ section.settings.color_picker-title }}
+        fill: {{ section.settings.color_picker-title  }}
     }
     .go--section__container .section--content svg path {
-        fill: {{ section.settings.color_picker-title }}
+        fill: {{ section.settings.color_picker-title  }}
     }
 </style>
 
