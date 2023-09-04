@@ -1,0 +1,68 @@
+<a style="background: {{ section.settings.color_picker }}" class="go--section__container" href="#about">
+    <div class="section--content">
+        <h4 style="color: {{ section.settings.color_picker-title  }};">{{ section.settings.section_title }}</h4>
+        {% render 'icon-arrow-left' %}
+    </div>
+</a>
+<style>
+    html {
+        scroll-behavior: smooth;
+    }
+    .go--section__container {
+        display: block;
+        text-decoration: none;
+    }
+    .go--section__container .section--content {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 15px;
+    }
+    .go--section__container .section--content svg {
+        rotate: {{ section.settings.rotate }}deg;
+        fill: {{ section.settings.color_picker-title }}
+    }
+    .go--section__container .section--content svg path {
+        fill: {{ section.settings.color_picker-title }}
+    }
+</style>
+
+
+{% schema %}
+    {
+      "name": "go to Section",
+      "class": "index-section",
+      "settings": [
+        {
+          "type": "text",
+          "id": "section_title",
+          "label": "Heading",
+          "default": "Season 1"       
+        },
+        {
+            "type": "color",
+            "label": "Background color",
+            "id": "color_picker",
+            "default": "#000000" 
+        },
+        {
+            "type": "color",
+            "label": "Select a Color",
+            "id": "color_picker-title",
+            "default": "#000000" 
+        },
+        {
+            "type": "number",
+            "label":"Rotate (deg)",
+            "id": "rotate",
+            "default": 90
+        }
+      ],
+      "presets": [
+        {
+          "name": "go to Section",
+          "category": "Custom"
+        }
+      ]
+    }
+  {% endschema %}

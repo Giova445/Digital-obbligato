@@ -3379,6 +3379,10 @@ details-disclosure > details {
   margin: auto;
 }
 
+sticky-header.header-wrapper.color-background-1.gradient.header-wrapper--border-bottom {
+  background: #fff;
+}
+
 .header__icons .button--primary {
   width: 125px;
   margin-left: 20px;
