@@ -272,7 +272,7 @@
     "f7b53eda-bd56-410a-ab31-db1d2dec291e": {
       "type": "featured-collection",
       "settings": {
-        "title": "Featured collection",
+        "title": "",
         "heading_size": "h1",
         "description": "",
         "show_description": false,
