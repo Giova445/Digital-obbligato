@@ -1,0 +1,142 @@
+<section class="image-slider page-width image-with-text">
+  <div class="slides ">
+    <div class="slide fade image-with-text__grid grid grid--gapless grid--1-col grid--2-col-tablet">
+      <div id="ImageWithText--template--20918433644855__ec6a7c02-37d6-46c2-81a6-313011e3e0f0" class=" slide--half image-with-text__content image-with-text__content--top image-with-text__content--desktop-left image-with-text__content--mobile-left image-with-text__content--adapt gradient content-container"><h2 class="image-with-text__heading inline-richtext h1">
+        Episode Title
+              </h2><div class="image-with-text__text rte body">
+                <p>Episode excerpt lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo.</p>
+              </div><a href="/collections" class="button button--primary">
+                  listen now
+                </a>
+      </div>
+      <div class="image-with-text__media-item image-with-text__media-item--medium image-with-text__media-item--top grid__item">
+        <div class="image-with-text__media image-with-text__media--adapt gradient color-background-1 global-media-settings media" style="padding-bottom: 72.04724409448819%;"><img src="//digital-obbligato-test.myshopify.com/cdn/shop/files/image_12.png?v=1693707151&amp;width=1500" alt="" srcset="//digital-obbligato-test.myshopify.com/cdn/shop/files/image_12.png?v=1693707151&amp;width=165 165w, //digital-obbligato-test.myshopify.com/cdn/shop/files/image_12.png?v=1693707151&amp;width=360 360w, //digital-obbligato-test.myshopify.com/cdn/shop/files/image_12.png?v=1693707151&amp;width=535 535w, //digital-obbligato-test.myshopify.com/cdn/shop/files/image_12.png?v=1693707151&amp;width=750 750w, //digital-obbligato-test.myshopify.com/cdn/shop/files/image_12.png?v=1693707151&amp;width=1070 1070w, //digital-obbligato-test.myshopify.com/cdn/shop/files/image_12.png?v=1693707151&amp;width=1500 1500w" width="1500" height="1081" loading="lazy" sizes="(min-width: 1200px) 550px,
+                (min-width: 750px) calc((100vw - 130px) / 2), calc((100vw - 50px) / 2)">
+        </div>
+      </div>
+    </div>
+    <div class="slide fade"> 
+      <img src="{{ section.settings.image2_url |img_url: 'medium'  }}" alt="Image 2">
+      <div class="text">{{ section.settings.slide2_text }}</div>
+    </div>
+    <!-- Add more slides as needed -->
+  </div>
+  <div class="btn--slide">
+    <button class="prev-button" onclick="prevSlide()">{% render 'icon-arrow-left' %}</button>
+    <button class="next-button" onclick="nextSlide()">{% render 'icon-arrow-right' %}</button>
+  </div>
+
+</section>
+<script>
+    let slideIndex = 0;
+showSlides(slideIndex);
+
+function prevSlide() {
+  showSlides(slideIndex -= 1);
+}
+
+function nextSlide() {
+  showSlides(slideIndex += 1);
+}
+
+function showSlides(n) {
+  const slides = document.querySelectorAll('.slide');
+  if (n >= slides.length) { slideIndex = 0; }
+  if (n < 0) { slideIndex = slides.length - 1; }
+  slides.forEach(slide => slide.style.display = 'none');
+  slides[slideIndex].style.display = 'flex';
+}
+</script>
+<style>
+  /* Style the image slider container */
+.image-slider {
+  position: relative;
+  width: 100%;
+  margin: 0 auto;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Style the slides */
+.slides {
+  display: flex;
+  justify-content: center;
+  transition: transform 0.5s ease-in-out;
+}
+.slide--half {
+  width: 50%;
+}
+
+/* Style the navigation buttons */
+.prev-button,
+.next-button {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 24px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  display: flex;
+}
+
+
+.btn--slide {
+    display: flex;
+    gap: 40px;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    padding: 40px 0;
+}
+
+.prev-button {
+  left: 0;
+}
+
+.next-button {
+  right: 0;
+}
+</style>
+{% schema %}
+    {
+      "name": "Image Slider",
+      "tag": "section",
+      "settings": [
+        {
+          "type": "text",
+          "label": "Slide 1 Text",
+          "id": "slide1_text",
+          "default": "Slide 1 Text"
+        },
+        {
+          "type": "text",
+          "label": "Slide 2 Text",
+          "id": "slide2_text",
+          "default": "Slide 2 Text"
+        },
+        {
+          "type": "image_picker",
+          "label": "Image 1 URL",
+          "id": "image1_url"
+        },
+        {
+          "type": "image_picker",
+          "label": "Image 2 URL",
+          "id": "image2_url"
+        }
+      ],
+      "presets": [
+        {
+          "name": "Image Slider",
+          "category": "Image"
+        }
+      ]
+    }
+{% endschema %}
+
+
+
+
