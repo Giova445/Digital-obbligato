@@ -2,6 +2,8 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-start;
+  padding-top: 42px;
+  gap: 20px;
 }
 
 @media only screen and (max-width: 749px) {

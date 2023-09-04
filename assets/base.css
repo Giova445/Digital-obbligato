@@ -1726,7 +1726,7 @@ details[open] > .share-button__fallback {
   width: 100%;
   display: flex;
   transition: box-shadow var(--duration-short) ease;
-  gap: 20px;
+  gap: 12px;
 }
 
 .newsletter-form__field-wrapper {
@@ -1830,6 +1830,7 @@ details[open] > .share-button__fallback {
 .footer--button.button.button--primary {
   margin-top: 20px;
   width: 80%;
+  height: 42px;
 }
 
 .footer__blocks-wrapper.grid.grid--1-col.grid--2-col.grid--4-col-tablet.scroll-trigger.animate--slide-in .footer-block:first-child {
@@ -3182,7 +3183,7 @@ details-disclosure > details {
 
 .rte > *:last-child {
   margin-bottom: 0;
-  font-size: 13.55px;
+  font-size: 16px;
 }
 
 .rte table {
